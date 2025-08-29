@@ -21,6 +21,10 @@ function alternatingCaps(str) {
   return result.join("");
 }
 
+app.get("/", (req, res) => {
+  res.send("Server is running. Use POST /bfsl for API requests.");
+});
+
 app.post("/bfhl", (req, res) => {
   try {
     const { data } = req.body;
