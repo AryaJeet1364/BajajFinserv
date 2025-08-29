@@ -22,7 +22,7 @@ function alternatingCaps(str) {
 }
 
 app.get("/", (req, res) => {
-  res.send("Server is running. Use POST /bfsl for API requests.");
+  res.send("Server is running. Use POST /bfhl for API requests.");
 });
 
 app.post("/bfhl", (req, res) => {
